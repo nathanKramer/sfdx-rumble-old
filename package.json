@@ -1,0 +1,26 @@
+{
+  "name": "sfdx-rumble",
+  "version": "0.1.0",
+  "description": "An SFDX plugin for generating powerful apex models from your schema.",
+  "main": "index.js",
+  "author": "Nathan Kramer",
+  "repository": "nathanKramer/apex-rumble",
+  "bugs": {
+    "url": "https://github.com/nathanKramer/apex-rumble/issues"
+  },
+  "scripts": {},
+  "keywords": [
+    "apex",
+    "force.com",
+    "rumble",
+    "salesforce",
+    "salesforce-dx",
+    "salesforcedx",
+    "oss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "sfdx-js": "^4.0.5"
+  },
+  "devDependencies": {}
+}
