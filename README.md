@@ -29,7 +29,42 @@ Run `npm install sfdx-rumble` NB: As of this commit I actually haven't published
 
 ## Usage
 
-TODO: Write usage instructions here
+Using this plugin is as simple as:
+
+1. Configuring via `config/rumble.json`
+2. Running rumble:pull, then rumble:build
+3. Deploying Learning the fairly straightforward apex code that is generated.
+
+### rumble.json
+
+Proposed structure: (Not all features implemented)
+
+```javascript
+{
+  "api_prefix": "Rumble", // Defaults
+  "model_prefix": "M", // Defaults
+
+  "models": [ // Objects to create models for
+    "Account",
+    "Contact",
+    "Lead",
+    "Opportunity",
+    {
+      "sobject": "Exception__c",
+      "model_name": "Error", // Should some reserved keyword issue occur, or for other reasons, you can map the object -> model name.
+      "field_whitelist": [
+        "Id",
+        "Name",
+        "UniqueName__c"
+      ],
+      "field_mappings": {
+        "UniqueName__c": "veryUniqueName" // field name mappings can occur independently of the whitelist.
+      }
+    },
+    "Occurrence__c"
+  ]
+}
+```
 
 ## Contributing
 
