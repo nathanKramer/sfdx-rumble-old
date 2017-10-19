@@ -1,12 +1,12 @@
 const { build, pull, help } = require('./lib/commands')
 
 exports.topics = [{
-  name: 'rumble',
+  name: 'models',
   description: 'Run apex rumble'
 }]
 
 exports.namespace = {
-  name: 'nathanKramer',
+  name: 'rumble',
   description: 'Generate powerful apex models from your schema'
 }
 
