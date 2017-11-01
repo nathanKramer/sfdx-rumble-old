@@ -16,7 +16,7 @@ List the models you want in `config/rumble.json`, eg:
 }
 ```
 
-Run `sfdx nathanKramer:rumble:pull` to bring pull down the schema description for the models you have listed. Then run `sfdx nathanKramer:rumble:build` to generate your rumble models and get coding.
+Run `sfdx rumble:models:pull` to bring pull down the schema description for the models you have listed. Then run `sfdx rumble:models:build` to generate your rumble models and get coding.
 
 For more info on the rumble API, see the [rumble docs](https://www.github.com/nathanKramer/apex-rumble)
 
