@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "salesforce-alm": "^40.10.0"
+    "salesforce-alm": "^46.10.0"
   },
   "devDependencies": {}
 }
