@@ -18,6 +18,7 @@
     "salesforcedx",
     "oss"
   ],
+  "files": ["*"],
   "license": "MIT",
   "dependencies": {
     "salesforce-alm": "^46.10.0"
